@@ -12,11 +12,11 @@ Es importante conocer la duración del proceso de descarga del video, así que e
 notifiqua dicha información y cuenta con GESTOR DE NOTIFICACIONES, 
 
 Gestor de Notificaciones:
-se puede acceder desde la pantalla principal y desde el video haciendo doble click en el.
-se pueden observar todas las notificaciones generadas por la descarga del video
-se pueden eliminar una por una
-cuenta con un boton para borrar todas las notificaiones
-cuenta con un boton para eliminar el video descargado
+* se puede acceder desde la pantalla principal y desde el video haciendo doble click en el.
+* se pueden observar todas las notificaciones generadas por la descarga del video
+* se pueden eliminar una por una
+* cuenta con un boton para borrar todas las notificaiones
+* cuenta con un boton para eliminar el video descargado
 
 La aplicacion responde:
 * a los cambios de pantalla
