@@ -41,7 +41,7 @@ public class HttpClient {
             client = new SyncHttpClient();
         }
         client.setTimeout(20000);
-        client.addHeader("Authorization", "Basic 1017249698");
+        client.addHeader("Authorization", mContext.getResources().getString(R.string.header));
         StringEntity entity = null;
         StringEntity nullEntity = null;
         entity = new StringEntity(jsonParams.toString(), "UTF-8");
@@ -87,10 +87,10 @@ public class HttpClient {
             client = new SyncHttpClient();
         }
         client.setTimeout(20000);
-        client.addHeader("Authorization", "Basic 1017249698");
-        StringEntity entity = null;
+        client.addHeader("Authorization",  mContext.getResources().getString(R.string.header));
+
         StringEntity nullentity = null;
-        entity = new StringEntity(serviceRest.getJsonParams().toString(), "UTF-8");
+        StringEntity entity = new StringEntity(serviceRest.getJsonParams().toString(), "UTF-8");
 
         switch (serviceRest.getType_request()) {
             case TypeHttpRequest.TYPE_POST:
@@ -103,15 +103,15 @@ public class HttpClient {
                 break;
             case TypeHttpRequest.TYPE_PUT:
                 Log.i("Depuracion", "TYPE_PUT");
-                client.put(mContext, url, (HttpEntity) entity, "application/json", jsonHttpResponseHandler);
+                client.put(mContext, url,  entity, "application/json", jsonHttpResponseHandler);
                 break;
             case TypeHttpRequest.TYPE_DELETE:
                 Log.i("Depuracion", "TYPE_DELETE");
-                client.delete(mContext, url, (HttpEntity) entity, "application/json", jsonHttpResponseHandler);
+                client.delete(mContext, url,  entity, "application/json", jsonHttpResponseHandler);
                 break;
             case TypeHttpRequest.TYPE_PATCH:
                 Log.i("Depuracion", "TYPE_PATCH");
-                client.patch(mContext, url, (HttpEntity) entity, "application/json", jsonHttpResponseHandler);
+                client.patch(mContext, url,  entity, "application/json", jsonHttpResponseHandler);
                 break;
         }
     }
