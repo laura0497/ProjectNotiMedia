@@ -132,7 +132,7 @@ public class DbNotification extends Activity {
 
     }
 
-    //delete the notification into the db
+   //delete the notification into the db
     public void deleteNotification(int id) {
         try {
             open();

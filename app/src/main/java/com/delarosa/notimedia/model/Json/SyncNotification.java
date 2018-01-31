@@ -69,7 +69,6 @@ public class SyncNotification {
 
         if (utilClass.checkInternet(contex)) {
             JSONObject jsonObjectContact = new JSONObject();
-
             sendToServer(jsonObjectContact, method, 3, String.valueOf(id));
         }else{
             utilClass.AlertNoInternet(contex);

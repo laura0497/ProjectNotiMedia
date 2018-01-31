@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
                     mProgressText.setText(getResources().getString(R.string.file_download_complete));
 
                 } else {
-                    // if wants to show the mb of the file
+                    // if wants to see the mb(size) of the file
                     // mProgressText.setText(getResources().getString(R.string.downloaded)+String.format(" (%d/%d) MB", download.getCurrentFileSize(), download.getTotalFileSize(),download));
                     mProgressText.setText(getResources().getString(R.string.downloaded) + String.format(" (%d)", download.getProgress()) + " %");
 

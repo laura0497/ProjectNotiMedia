@@ -25,6 +25,14 @@
 
         <activity android:name=".controller.activitys.VideoActivity" android:noHistory="true"/>
         <activity android:name=".controller.activitys.NotificationManagerActivity" android:noHistory="true"/>
+        <receiver
+            android:name=".model.Services.InternetReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

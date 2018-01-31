@@ -73,9 +73,7 @@ public class NotificationManagerActivity extends AppCompatActivity {
             }
         });
 
-       // syncNotification.getNotification();
-
-
+        // syncNotification.getNotification();
 
 
         passtoFragment();
@@ -122,13 +120,13 @@ public class NotificationManagerActivity extends AppCompatActivity {
 
     //method to delete all the notifications
     private void deleteNotifications() {
+
         ArrayList<NotificationManagerEntity> notificationList = dbNotification.getNotifications();
         for (NotificationManagerEntity notification : notificationList) {
             int id = notification.getId();
             int status = notification.getStatus();
             if (status == 2) {
                 syncNotification.deleteNotification(id);
-
                 dbNotification.deleteNotification(id);
             }
         }

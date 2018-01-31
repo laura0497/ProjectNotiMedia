@@ -80,7 +80,7 @@ public class NotificationManagerFragment extends Fragment implements Notificatio
                 }
         );
 
-         getNotificationFromServer();
+        getNotificationFromServer();
         return rootView;
     }
 
@@ -119,7 +119,6 @@ public class NotificationManagerFragment extends Fragment implements Notificatio
     public void listNotification() {
         try {
 
-
             notificationManagerEntityArrayList = dbNotification.getNotifications();
             if (notificationManagerEntityArrayList.size() == 0) {
                 showPopUpEmpty();
@@ -134,6 +133,7 @@ public class NotificationManagerFragment extends Fragment implements Notificatio
             e.printStackTrace();
         }
     }
+
 
     //method to show a pop-up if there aren´t data
     private void showPopUpEmpty() {
