@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Noti Media</string>
+    <string name="url">http://proyectos.tekus.co/Test/api/notifications/</string>
+
+    <string name="file_download_complete">Archivo Descargado</string>
+    <string name="downloaded">Descargando</string>
+    <string name="permission_denied">Permiso denegado</string>
+
+
+    <string name="tittle_dialog">Atención</string>
+    <string name="message_dialog">No hay notificaciones de descargas</string>
+
+
+    <string name="deleteNot">Borrar Notificaciones</string>
+    <string name="deleteVideo">Borrar Video</string>
+    <string name="home">home</string>
+    <string name="sub_home">Regresa y haz mas descargas!</string>
+
+
+    <string name="initialDuration">9000000</string>
+
+
+
+</resources>
